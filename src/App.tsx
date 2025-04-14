@@ -28,7 +28,7 @@ function App() {
 
  const getEmployee = () => {
   // Send the request
-  fetch("https://randomuser.me/api?nat=en")
+  fetch("https://localhost:3310/api/emplyees")
        .then((response) => response.json())
        .then((data) => {
          console.log;setEmployee(data.results[0]);
